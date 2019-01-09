@@ -1,6 +1,7 @@
 # Gupao-mall
 
-> 首先打开gpmall-parent项目，打开该项目的pom.xml，然后选Maven Projects->gpmall-parent->Plugins->install->install:install，右键，选Run Maven Build，将依赖包安装到本地maven仓库。然后再打开各子工程，比如：user-service。
+> 首先打开gpmall-parent项目，打开该项目的pom.xml，删除<parent>配置，然后选Maven Projects->gpmall-parent->Plugins->install->install:install，右键，选Run Maven Build（或者双击），将依赖包安装到本地maven仓库。然后再打开各子工程，比如：user-service。
+> 打包运行user-service：修改application.properties里zk/数据库/redis等相关配置。运行bin/start.sh。或是运行Bootstrap.java中的main方法。打包方法：Maven Projects->user-api->Plugins，双击package，选择Maven Projects->user-service->Plugins，双击package。
 > 计划整合vip课程所有技术，来实现相关业务的整合。主要目的不是为了要完成一个具体项目，而是通过项目更进一步了解技术所要解决的问题。
 
 **整个项目不会在课堂上完全讲解，而是需要大家能够参与到项目中来，在实现业务功能的同时把遇到的问题整理出来，提交到issue上。帮助大家以一个健康的方式快速成长**
